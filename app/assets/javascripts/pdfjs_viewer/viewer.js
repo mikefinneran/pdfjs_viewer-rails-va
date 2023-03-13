@@ -3057,7 +3057,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   imageResourcesPath: {
-    value: "./images/",
+    value: "/pdfjs/web/images/",
     kind: OptionKind.VIEWER
   },
   maxCanvasPixels: {
@@ -3117,7 +3117,7 @@ const defaultOptions = {
     kind: OptionKind.API
   },
   cMapUrl: {
-    value: "../web/cmaps/",
+    value: "/pdfjs/web/cmaps/",
     kind: OptionKind.API
   },
   disableAutoFetch: {
@@ -3177,13 +3177,13 @@ const defaultOptions = {
     kind: OptionKind.WORKER
   },
   workerSrc: {
-    value: "../build/pdf.worker.js",
+    value: "/pdfjs/web/pdf.worker.js?version=3.4.120",
     kind: OptionKind.WORKER
   }
 };
 {
   defaultOptions.defaultUrl = {
-    value: "compressed.tracemonkey-pldi-09.pdf",
+    value: window.resourceURL,
     kind: OptionKind.VIEWER
   };
   defaultOptions.disablePreferences = {
